@@ -6,7 +6,7 @@ export const Order = model(
     table: { type: String, required: true },
     status: {
       type: String,
-      enum: ["WAITING, IN_PRODUCTION", "DONE"],
+      enum: ["WAITING", "IN_PRODUCTION", "DONE"],
       default: "WAITING",
     },
     createdAt: { type: Date, default: Date.now },
